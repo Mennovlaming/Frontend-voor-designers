@@ -1,0 +1,290 @@
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+	font-family: 'eenfont';
+	src:	url('../fonts/Poppins.ttf') format('ttf'),
+			 url('../fonts/eenfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text:black;
+	--lightblue: #c8edff;
+	--lightgray: #EAEAEA;
+	--darkgray: #b8b8b8;
+	--nightblue: #232036;
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+  	font-family:eenfont, sans-serif;
+  	color:var(--color-text);
+  	background-color:var(--lightblue);
+	display: flex;
+	flex-direction: column;
+	gap: 2.5em;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	display: none;
+	z-index: 1;
+}
+
+ul li a {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	padding: 0.7em 4em;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	border: 2px solid black;
+	display: flex;
+	background-color: var(--lightgray);
+}
+ul li a:hover {
+	background-color: var(--darkgray);
+}
+
+ul li a img {
+	max-width: 33px;
+}
+
+body img:first-of-type:not(ul li a img) {
+	width: 22em;
+	border-radius: 20px;
+	border: 3px solid black;
+	margin-top: 2em;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+ul.showMenu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 10px;
+}
+
+/* p:first of type is de regenMeter, die hoeft niet, maar misschien leuk om te laten zien */
+p:not(.snowflakes p) 
+/* p:not(.snowflakes p, p:first-of-type)  */
+{
+	z-index: 0;
+	position: fixed;
+	bottom: 3em;
+	opacity: 0;
+	user-select: none;
+	animation: fade 2s 2s 2 ease-in-out;
+}
+
+/* text fade een op en neer met opacity */
+@keyframes fade {
+	25%, 50% {
+		opacity: 1;
+	}
+	75%, 100%{
+		opacity: 0;
+	}
+}
+
+/* sneeuw valt van top-10% naar 70% */
+@keyframes snowflakes-fall {
+	0%{
+		top:-10%
+	}
+	100% {
+		top:70%
+	}
+}
+
+/* sneeuw schud heen en weer (x as) */
+@keyframes snowflakes-shake {
+	0% {
+	transform:translateX(0px) 
+	}
+	50% {
+	transform:translateX(80px)
+	} 
+	100% {
+	transform:translateX(0px)
+	}
+} 
+
+/* !important moet helaas om de invisible te overschrijven */
+.snowflake {
+	color: #fff;
+	text-shadow: 0 0 1px #000;
+	display: block !important;
+	position:fixed;
+	top: -10%;
+	user-select:none;
+	cursor:default;
+	animation-name:snowflakes-fall,snowflakes-shake;
+	animation-duration:8s,3s;
+	animation-timing-function:linear,ease-in-out;
+	animation-iteration-count:infinite,infinite;
+	animation-play-state:running,running;
+}
+/* Er is verschil gemaakt in wanneer de vlok verschijnt en hoe lang hij er over doet,
+en welke positie */
+.snowflake:nth-of-type(1) {
+	left:60%;
+	animation-delay:1s,1s;
+}
+.snowflake:nth-of-type(2){
+	left:58%;
+	animation-delay:6s,.5s
+}
+.snowflake:nth-of-type(3) {
+	left:56%;
+	animation-delay:4s,.2s;
+}
+.snowflake:nth-of-type(4) {
+	left:54%;
+	animation-delay:2s,2s;
+}
+.snowflake:nth-of-type(5) {
+	left:52%;
+	animation-delay:6.5s,3s;
+}
+.snowflake:nth-of-type(6) {
+	left:50%;
+	animation-delay:6s,.8s;
+}
+.snowflake:nth-of-type(7) {
+	left:48%;
+	animation-delay:2.5s,1s
+}
+.snowflake:nth-of-type(8) {
+	left:46%;
+	animation-delay:1s,0s
+}
+.snowflake:nth-of-type(9){
+	left:44%;
+	animation-delay:4s,1.5s
+} 
+.snowflake:nth-of-type(10){
+	left:42%;
+	animation-delay:5s,2.2s
+} 
+.snowflake:nth-of-type(11){
+	left:40%;
+	animation-delay:2.5s,1s
+} 
+.snowflake:nth-of-type(12){
+	left:38%;
+	animation-delay:5.8s,2.5s
+} 
+.snowflake:nth-of-type(13){
+	left:36%;
+	animation-delay:4.4s,2s
+} 
+.snowflake:nth-of-type(14){
+	left:34%;
+	animation-delay:1.2s,1.5s
+} 
+.snowflake:nth-of-type(15){
+	left:32%;
+	animation-delay:2s,3.5s
+} 
+.snowflake:nth-of-type(16){
+	left:30%;
+	animation-delay:4s,.2s
+} 
+
+/* Mag niet zichtbaar zijn zonder er op de knop gedrukt word */
+.invisible {
+	display: none;
+}
+
+.stars span{
+	display: none;
+	width: 10px;
+	height: 10px;
+	background-color: var(--darkgray);
+	position: absolute;
+	border-radius: 50%;
+}
+
+/* Verschillende grootes en locatie van de sterren */
+.stars span:nth-of-type(1) {
+	top: 10%;
+	width: 7px;
+	height: 7px;
+}
+.stars span:nth-of-type(2) {
+	top: 20%;
+	left: 60%;
+	width: 5px;
+	height: 5px;
+}
+.stars span:nth-of-type(3) {
+	top: 25%;
+	left: 42%;
+	width: 3px;
+	height: 3px;
+}
+.stars span:nth-of-type(4) {
+	top: 25%;
+	left: 42%;
+	width: 3px;
+	height: 3px;
+}
+.stars span:nth-of-type(5) {
+	top: 27%;
+	left: 56%;
+	width: 4px;
+	height: 4px;
+}
+.stars span:nth-of-type(6) {
+	top: 10%;
+	left: 36%;
+	width: 6px;
+	height: 6px;
+}
+
+@media (prefers-color-scheme: dark) { 
+	body {
+		background-color: var(--nightblue);
+	}
+	body img:first-of-type:not(ul li a img) {
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+		filter: brightness(0.65) contrast(2.55) grayscale(0.82) invert(0.17);
+		/* filter combinatie maakt het nacht zonder image te veranderen. */
+		border: 3px solid white;
+	}
+	.stars span {
+		display: block;
+	}
+	ul li a {
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		background-color: var(--darkgray);
+	}
+	ul li a:hover {
+		background-color: var(--lightgray);
+	}
+	p {
+		color: white;
+	}
+	
+}
