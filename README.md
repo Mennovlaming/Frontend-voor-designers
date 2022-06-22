@@ -74,28 +74,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 2 plan
 
-<details>
+
+
   <summary>Hier een beschrijving van opdracht 2.
   Voor opdracht 2 wil ik een interactief landschap maken, waar een gebruiker invloed heeft op hoe het eruit ziet.
   Een gebruiker kan doormiddel van knoppen weertypes toevoegen aan het landschap, en zo het landschap beinvloeden. </summary>
 
 
   ### Je ontwerp:
+
   <img src="readme-images/concept.png" width="375px" alt="ontwerp opdracht 2">
+
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Met javascript images veranderen (DOM manipulatie).
   - Met javascript css klassen toevoegen. 
-  - CSS filters gebruiken/ animaties maken
-</details>
+
+
 
 
 
 ## Opdracht 2 test
 
-<details>
+
+
   <summary>Testresultaten week 7</summary>
 
   Ik heb tijdens het testen 5 bevindingen gevonden waar nog aan gewerkt moet worden. 
@@ -112,27 +116,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Er ontbreekt nog een nachtmodus waar de CSS anders is als de gebruiker zijn laptop in dark mode staat.
 
   #### oplossing:
-  Dit was ik vergeten te doen, na aanleiding hiervan heb ik een dark modus gemaakt.
-  
+  Dit was ik vergeten te doen, na aanleiding hiervan heb ik een dark modus gemaakt. 
+
   <img src="readme-images/nightmode.png" width="375px" alt="dark mode">
 
-  
+
   ### Bevinding 3:  
   Tijdens het testen kwam ik erachter dat de styling van de images ook op de images van de button gaat, dit is niet de bedoeling en ziet er slordig uit. 
 
   #### oplossing:
   Dit is opgelost met het gebruiken van een :not selector, hier zorg je ervoor dat hij een specifiek element niet meeneemt in de styling. 
+
   <img src="readme-images/notselector.png" width="375px" alt="not selector">
+
+
+
+
 
 
 
 
 ## Opdracht 2 reflectie
 
+
   <summary>Reflectie week 8</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  
   <img src="readme-images/eind.png" width="375px" alt="uitkomst opdracht 2">
 
 
@@ -142,13 +151,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/ifelse.png" width="375px" alt="if else code">
 
 
- ### Dit was lastig/Is niet gelukt:
-  Wat ik graag nog toe had willen voegen, is dat het landschap (de img) ook veranderd bij de sneeuwfunctie, dit is helaas niet gelukt omdat de  functie hierboven constant aan het switchen is tussen de regenplaatjes.
+  ### Dit was lastig/Is niet gelukt:
+  Wat ik graag nog toe had willen voegen, is dat het landschap (de img) ook veranderd bij de sneeuwfunctie, dit is helaas niet gelukt omdat de functie hierboven constant aan het switchen is tussen de regenplaatjes.
 
   Ook had ik misschien de regenplaatjes willen vervangen voor CSS effecten waardoor ik geen plaatjes hoef te gebruiken.
   Ik vond het een leuke uitdaging om te doen met Javascript, maar ik denk dat het resultaat mooier was geweest als ik alleen maar CSS had gebruikt. 
 
-  
   <img src="readme-images/snow.png" width="375px" alt="sneeuw">
-  
-</details>
+
+
+## Bronnenlijst opdracht 2
+1. https://developer.mozilla.org/en-US/docs/Web/API/setInterval
+2. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
+3. https://alvarotrigo.com/blog/change-css-javascript/
+4. https://cssgenerator.org/filter-css-generator.html (filter generator)
