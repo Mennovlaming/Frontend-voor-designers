@@ -75,19 +75,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Opdracht 2 plan
 
 <details>
-  <summary>uitwerken na schetsen idee (voor week 5)</summary>
+  <summary>Hier een beschrijving van opdracht 2.
+  Voor opdracht 2 wil ik een interactief landschap maken, waar een gebruiker invloed heeft op hoe het eruit ziet.
+  Een gebruiker kan doormiddel van knoppen weertypes toevoegen aan het landschap, en zo het landschap beinvloeden. </summary>
 
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/concept.png" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Met javascript images veranderen (DOM manipulatie).
+  - Met javascript css klassen toevoegen. 
+  - CSS filters gebruiken/ animaties maken
 </details>
 
 
@@ -95,30 +96,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Opdracht 2 test
 
 <details>
-  <summary>uitwerken na testen (week 7)</summary>
+  <summary>Testresultaten week 7</summary>
 
-  Neem minimaal 5 bevindingen op:
+  Ik heb tijdens het testen 5 bevindingen gevonden waar nog aan gewerkt moet worden. 
 
 
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De styling van het product was nog niet in orde, er was nog niet genoeg gedaan aan styling omdat ik eerst de functionaliteiten in orde wou hebben.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Ik ga na het helemaal uitwerken van de functies, de CSS maken. Tot nu toe was alleen de styling uitgewerkt die noodzakelijk was voor de functies.
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Er ontbreekt nog een nachtmodus waar de CSS anders is als de gebruiker zijn laptop in dark mode staat.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Dit was ik vergeten te doen, na aanleiding hiervan heb ik een dark modus gemaakt. 
+  <img src="readme-images/nightmode.png" width="375px" alt="dark mode">
+
+  ### Bevinding 3:  
+  Tijdens het testen kwam ik erachter dat de styling van de images ook op de images van de button gaat, dit is niet de bedoeling en ziet er slordig uit. 
+
+  #### oplossing:
+  Dit is opgelost met het gebruiken van een :not selector, hier zorg je ervoor dat hij een specifiek element niet meeneemt in de styling. 
+  <img src="readme-images/notselector.png" width="375px" alt="not selector">
 
 
-
-  ### Bevinding 3:
-  ...
+  
 </details>
 
 
@@ -126,20 +131,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Opdracht 2 reflectie
 
 <details>
-  <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
+  <summary>Reflectie week 8</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/eind.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Wat ik vooral heb geleerd is hoe ik met Javascript een timer gebruik om waardes te controleren en vervolgens met een if else functie te runnen. 
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/ifelse.png" width="375px" alt="if else code">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Wat ik graag nog toe had willen voegen, is dat het landschap (de img) ook veranderd bij de sneeuwfunctie, dit is helaas niet gelukt omdat de functie hierboven constant aan het switchen is tussen de regenplaatjes.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  Ook had ik misschien de regenplaatjes willen vervangen voor CSS effecten waardoor ik geen plaatjes hoef te gebruiken.
+  Ik vond het een leuke uitdaging om te doen met Javascript, maar ik denk dat het resultaat mooier was geweest als ik alleen maar CSS had gebruikt. 
+
+  <img src="readme-images/snow.png" width="375px" alt="sneeuw">
 </details>
