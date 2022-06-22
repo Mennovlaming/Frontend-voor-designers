@@ -123,17 +123,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/notselector.png" width="375px" alt="not selector">
 
 
-  
-</details>
-
 
 
 ## Opdracht 2 reflectie
 
-<details>
   <summary>Reflectie week 8</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
+  
   <img src="readme-images/eind.png" width="375px" alt="uitkomst opdracht 2">
 
 
@@ -143,11 +140,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/ifelse.png" width="375px" alt="if else code">
 
 
-  ### Dit was lastig/Is niet gelukt:
-  Wat ik graag nog toe had willen voegen, is dat het landschap (de img) ook veranderd bij de sneeuwfunctie, dit is helaas niet gelukt omdat de functie hierboven constant aan het switchen is tussen de regenplaatjes.
+ ### Dit was lastig/Is niet gelukt:
+  Wat ik graag nog toe had willen voegen, is dat het landschap (de img) ook veranderd bij de sneeuwfunctie, dit is helaas niet gelukt omdat de  functie hierboven constant aan het switchen is tussen de regenplaatjes.
 
   Ook had ik misschien de regenplaatjes willen vervangen voor CSS effecten waardoor ik geen plaatjes hoef te gebruiken.
   Ik vond het een leuke uitdaging om te doen met Javascript, maar ik denk dat het resultaat mooier was geweest als ik alleen maar CSS had gebruikt. 
 
+  
   <img src="readme-images/snow.png" width="375px" alt="sneeuw">
+  
 </details>
