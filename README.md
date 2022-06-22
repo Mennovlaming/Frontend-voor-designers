@@ -112,9 +112,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Er ontbreekt nog een nachtmodus waar de CSS anders is als de gebruiker zijn laptop in dark mode staat.
 
   #### oplossing:
-  Dit was ik vergeten te doen, na aanleiding hiervan heb ik een dark modus gemaakt. 
+  Dit was ik vergeten te doen, na aanleiding hiervan heb ik een dark modus gemaakt.
+  
   <img src="readme-images/nightmode.png" width="375px" alt="dark mode">
 
+  
   ### Bevinding 3:  
   Tijdens het testen kwam ik erachter dat de styling van de images ook op de images van de button gaat, dit is niet de bedoeling en ziet er slordig uit. 
 
