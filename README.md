@@ -159,6 +159,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/snow.png" width="375px" alt="sneeuw">
 
+### Na de eerste beoordeling
+Na de eerste beoordeling, moest ik nog een aantal dingen aanpassen die nog beter konden. De gebruiker moest een indicatie krijgen hoever ze waren met het drukken op de regenknop (omdat deze na 5 keer klikken begint met onweren.), de dark mode functie moet volledig werken (net als dat hij meer responsive moest zijn) en er was een probleem met de filters die niet weg gingen, met andere woorden, het moest allemaal net even completer. 
+
+Als eerste ben ik aan de slag gegaan met de regen indicatie, een gebruiker moest feedback krijgen met hoe ver hij was tot het zou gaan onweren. Ik heb hier een CSS progressbar toegevoegd aan de bestaande regencheck functie, die heb ik uitgebreid en aangepast zodat deze ook geen problemen meer gaf met de filters. Door te werken met CSS classes in plaats van losse CSS in Javascript zorgt het voor een stuk minder problemen met het overschrijven van elkaar (waardoor ik ook de !important weg kon halen). 
+
+ <img src="readme-images/ifelsenew.png" width="375px" alt="verbetering">
+
+ Hierna ben ik aan de slag gegaan om de applicatie responsive te maken. De applicatie was op elk scherm al goed te zien en te gebruiken, het enige wat jammer was en beter kon was dat er niks veranderde met het scherm. Ik heb ervoor gekozen om de CSS progressiebalk responsive te maken, zodat hij verticaal is op groot scherm, en horizontaal op kleiner scherm, dit heb ik gedaan met CSS media queries. 
+ Ook heb ik met CSS media queries opgelost dat sommige sneeuwvlokken te veel naar rechts of links vielen, afhankelijk van de grootte van het scherm. 
+
+ Wat ook beter kon, is het gebruik maken van andere interacties, bijvoorbeeld het toestenbord, bij de oude versie kon een gebruiker op een toets klikken om het menu te laten verschijnen, dit is alleen erg gebruikersvriendelijk, het merendeel van de applicatie is namelijk met de muis te bedienen. Ik heb er voor gekozen om hier een button van te maken, die na 3 seconden begint te springen om de aandacht op de vragen. 
+
+ Als interactie heb ik er voor gekozen dat de regenfunctie te bedienen is met de pijltjes, pijlje omhoog en naar rechts voor meer regen. (naar rechts i.v.m. responsiveness, dan is de 'progressbar' horizontaal i.p.v. verticaal)
+
+ Als laatste heb ik de HTML semantischer gemaakt, ik maakte nog te veel gebruik van onnodige div's die ik gewoon als element kwijt kon.
+
+ Al met al heb ik veel aanpassingen gedaan in de verbeterde versie, en ik denk ik dat de opdracht nu een stuk completer is.
+
+
+
+ 
+
 
 ## Bronnenlijst opdracht 2
 1. https://developer.mozilla.org/en-US/docs/Web/API/setInterval
